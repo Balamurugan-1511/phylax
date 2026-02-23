@@ -57,7 +57,21 @@ A modern web platform that predicts disaster risk based on location and weather 
 * **Frontend:** React + Vite
 * **Routing:** React Router
 * **Icons:** Lucide React
+* **Backend:** Node.js + Express
+* **Database:** MongoDB
 * **Styling:** Custom CSS
+
+---
+
+## 💾 Database (MongoDB)
+
+The platform uses **MongoDB** to store:
+
+* User accounts & authentication data
+* Emergency zones
+* Zone members & affected people
+* Help requests (food, water, medical, etc.)
+* Disaster prediction logs
 
 ---
 
@@ -100,15 +114,11 @@ Login → Dashboard → Predict Risk → Create/Join Zone → Coordinate Help
 
 ## 🔮 Future Improvements
 
-* Backend integration (Node / Flask)
-* OAuth authentication
-* Weather API integration
-* Database for zones & users
-* Real-time updates (Socket)
-* Notification alerts
+* Real-time updates
+* Push notifications for alerts
+* ML prediction model
+* Mobile app integration
 
 ---
 
-## 📜 License
 
-ISC
