@@ -1,158 +1,114 @@
-<<<<<<< HEAD
-# phylax
-AI-Driven Geography-Aware Disaster Risk Prediction And Relief Coordination System
-=======
-# Disaster Management Platform
+# Phylax
 
-A comprehensive web application for coordinating disaster relief efforts and emergency response.
+**AI-Driven Geography-Aware Disaster Risk Prediction & Relief Coordination System**
 
-## Features
+A modern web platform that predicts disaster risk based on location and weather data while enabling real-time coordination of relief efforts.
 
-### 1. User Authentication
-- Sign up with Google, Facebook, or Email/Password
-- Secure authentication and session management
+---
 
-### 2. Dashboard
-- Real-time weather data display (rainfall, temperature, humidity, forecasts)
-- Disaster risk prediction based on location and weather patterns
-- Visual risk meter/speedometer showing threat levels
-- Active zones display (30+ users)
+## 🚀 Features
 
-### 3. Disaster Risk Prediction
-- Analyzes location coordinates
-- Processes recent and forecasted rainfall data
-- Calculates temperature and humidity patterns
-- Displays risk levels:
-  - Evacuate Immediately
-  - Most Expected
-  - Expected
-  - Likely
-  - Unlikely
+### 🔐 Authentication
 
-### 4. Zone Management
+* Google / Facebook / Email login
+* Secure session management
 
-#### Create a Zone
-- Auto-filled location detection
-- Basic zone information (name, description)
-- Emergency type selection (flood, landslide, earthquake, etc.)
-- Severity level selection
-- Visible to nearby users
-- Becomes "Active Zone" when 30+ users join
+### 📊 Dashboard
 
-#### Join a Zone
-- Join via shared link
-- Browse nearby zones
-- Search functionality
-- View zone distance and member count
+* Real-time weather insights (rainfall, temperature, humidity)
+* AI-based disaster risk prediction
+* Visual risk meter showing threat levels
+* Active emergency zones overview
 
-#### View Existing Zones
-- Filter by emergency type
-- View all active zones
-- See zone status and member count
+### ⚠️ Risk Prediction
 
-### 5. Zone Coordination Page
-Inside a zone, users can:
-- View number of people affected
-- See posted needs (food, water, medical, transport)
-- Choose how to help:
-  - Provide Food
-  - Provide Water
-  - Medical Aid
-  - Transport Help
-  - Volunteer
-  - Financial Aid
-- Share zone link with others
+* Uses location + weather patterns
+* Displays risk levels:
 
-## Tech Stack
+  * Evacuate Immediately
+  * Most Expected
+  * Expected
+  * Likely
+  * Unlikely
 
-- **Frontend**: React 19
-- **Routing**: React Router DOM v7
-- **Icons**: Lucide React
-- **Build Tool**: Vite
-- **Styling**: Custom CSS with modern gradients and animations
+### 📍 Zone Management
 
-## Installation
+**Create Zone**
 
-1. Navigate to the project directory:
+* Auto location detection
+* Emergency type & severity selection
+* Visible to nearby users
+* Becomes active when multiple users join
+
+**Join Zone**
+
+* Join via link or search nearby zones
+* View distance & member count
+
+**Zone Coordination**
+
+* See affected people & needs
+* Offer help (Food, Water, Medical, Transport, Volunteer, Financial)
+
+---
+
+## 🛠 Tech Stack
+
+* **Frontend:** React + Vite
+* **Routing:** React Router
+* **Icons:** Lucide React
+* **Styling:** Custom CSS
+
+---
+
+## ⚡ Installation
+
 ```bash
-cd "C:\Users\bala\Downloads\New folder"
-```
+# Clone repo
+git clone https://github.com/<your-username>/phylax.git
 
-2. Install dependencies (already done):
-```bash
+# Go to project folder
+cd phylax
+
+# Install dependencies
 npm install
-```
 
-3. Start the development server:
-```bash
+# Run project
 npm run dev
 ```
 
-4. Open your browser and navigate to the URL shown in the terminal (usually `http://localhost:5173`)
+---
 
-## Project Structure
+## 📂 Project Structure
 
 ```
-├── src/
-│   ├── pages/
-│   │   ├── LandingPage.jsx      # Authentication page
-│   │   ├── Dashboard.jsx        # Main dashboard with weather & risk data
-│   │   ├── CreateZone.jsx       # Create new emergency zone
-│   │   ├── JoinZone.jsx         # Join existing zones
-│   │   ├── ViewZones.jsx        # Browse all active zones
-│   │   └── ZonePage.jsx         # Individual zone coordination page
-│   ├── styles/
-│   │   ├── LandingPage.css
-│   │   ├── Dashboard.css
-│   │   ├── CreateZone.css
-│   │   ├── JoinZone.css
-│   │   ├── ViewZones.css
-│   │   └── ZonePage.css
-│   ├── App.jsx                  # Main app component with routing
-│   ├── main.jsx                 # Entry point
-│   └── index.css                # Global styles
-├── index.html
-├── vite.config.js
-└── package.json
+src/
+ ├── pages/
+ ├── styles/
+ ├── App.jsx
+ ├── main.jsx
+ └── index.css
 ```
 
-## User Flow
+---
 
-1. **Login** → User signs up/signs in
-2. **Dashboard** → View weather data, risk predictions, and active zones
-3. **Predict Risk** → System calculates disaster probability
-4. **Zone Options** → Create, Join, or View Zones
-5. **Create Zone** → Set up emergency coordination area
-6. **Join Zone** → Connect via link or nearby search
-7. **Zone Page** → Coordinate relief efforts, view needs, offer help
+## 🔄 User Flow
 
-## Color Scheme
+Login → Dashboard → Predict Risk → Create/Join Zone → Coordinate Help
 
-- **Primary Background**: Dark gradients (#0a0a0a to #1a1a2e)
-- **Cards**: #16213e with subtle borders
-- **Accent Colors**: 
-  - Primary: #667eea to #764ba2 (purple gradient)
-  - Secondary: #f093fb to #f5576c (pink gradient)
-  - Tertiary: #4facfe to #00f2fe (blue gradient)
-- **Alert Colors**: 
-  - Danger: #ff6b6b
-  - Warning: #ffa500
-  - Success: #4cd137
+---
 
-## Next Steps (Backend Integration)
+## 🔮 Future Improvements
 
-To make this fully functional, you'll need to:
+* Backend integration (Node / Flask)
+* OAuth authentication
+* Weather API integration
+* Database for zones & users
+* Real-time updates (Socket)
+* Notification alerts
 
-1. Set up a backend server (Node.js/Express, Python/Flask, etc.)
-2. Implement real authentication (Google OAuth, Facebook OAuth, JWT)
-3. Integrate weather API (OpenWeatherMap, WeatherAPI, etc.)
-4. Create database schema for zones, users, and help requests
-5. Implement real-time updates (Socket.io or similar)
-6. Add geolocation services for accurate positioning
-7. Implement actual risk prediction algorithm
-8. Set up notification system for alerts
+---
 
-## License
+## 📜 License
 
 ISC
->>>>>>> 7eed111 (Initial commit)
