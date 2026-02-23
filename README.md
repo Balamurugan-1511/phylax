@@ -65,7 +65,7 @@ A modern web platform that predicts disaster risk based on location and weather 
 
 ```bash
 # Clone repo
-git clone https://github.com/<your-username>/phylax.git
+git clone https://github.com/Balamurugan-1511/phylax
 
 # Go to project folder
 cd phylax
