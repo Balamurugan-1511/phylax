@@ -121,8 +121,8 @@ Login → Dashboard → Predict Risk → Create/Join Zone → Coordinate Help
 
 ---
 ## Contributors
-->Sam Israel D
-->Bala Murugan P
+->Sam Israel D /n
+->Bala Murugan P/n
 ->Vijay Kumar B
 
 
