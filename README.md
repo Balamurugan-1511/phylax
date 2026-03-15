@@ -120,5 +120,9 @@ Login → Dashboard → Predict Risk → Create/Join Zone → Coordinate Help
 * Mobile app integration
 
 ---
+## Contributors
+->Sam Israel D
+->Bala Murugan P
+->Vijay Kumar B
 
 
